@@ -3,27 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tea House with tailwind</title>
+    <title>Tea House with tailwind</title>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind css  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-manrope{
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
+                primary: '#1C1C1C',
+                dark: '#777',
+              },
+              boxShadow: {
+                '3xl': '0px 7px 50px 0px rgba(0, 0, 0, 0.06)',
+            }
             }
           }
         }
     </script>
 </head>
-<body>
-    
+<body class="font-manrope">
+  <header>
+    <div class="lg:w-4/5 mx-auto lg:flex gap-6 mt-20">
+        <div class="lg:w-1/2 w-full">
+           <h1 class="text-primary lg:text-7xl text-3xl font-extrabold">It's good 
+            tea time at The Tea House</h1>
+            <p class="text-dark text-lg my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn bg-gradient-to-r to-[#F00]  from-[#FF8938] ">Explore More <img class="w-3 h-3" src="images/arrow.png" alt=""></button>
+        </div>
+        <div class="lg:w-1/2 w-full relative">
+          <img src="images/banner.png" alt="">
+          <div class="flex items-center gap-3 rounded-lg p-4 w-60 absolute -mt-24 ml-20 bg-white shadow-3xl">
+            <div>
+              <i class="fa-solid fa-star fa-2x text-amber-400"></i>
+            </div>
+            <div>
+                <h2 class="tex-primary text-3xl font-extrabold">5.0</h2>
+                <p class="text-dark text-base font-semibold">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+  <main>
+    <div class="lg:w-4/5 w-full mx-auto mt-20 text-center">
+      <h2 class="text-primary text-5xl font-extrabold">Our Featured Products</h2>
+      <p class="text-dark text-lg my-7 w-3/4 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+      <div class="lg:flex gap-8">
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0.00)] rounded-lg p-6">
+          <img class="mx-auto" src="images/tea-1.png" alt="">
+          <h3 class="text-primary text-2xl font-extrabold">Milk Tea</h3>
+          <p class="text-dark text-base font-semibold">Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0.00)] rounded-lg p-6">
+          <img class="mx-auto" src="images/tea-2.png" alt="">
+          <h3 class="text-primary text-2xl font-extrabold">Black Tea</h3>
+          <p class="text-dark text-base font-semibold">Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0.00)] rounded-lg p-6">
+          <img class="mx-auto" src="images/tea-3.png" alt="">
+          <h3 class="text-primary text-2xl font-extrabold">Lemon Tea</h3>
+          <p class="text-dark text-base font-semibold">Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0.00)] rounded-lg p-6">
+          <img class="mx-auto" src="images/tea-4.png" alt="">
+          <h3 class="text-primary text-2xl font-extrabold">Green Tea</h3>
+          <p class="text-dark text-base font-semibold">Creamer could be replaced by fresh milk</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
